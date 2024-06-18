@@ -1,0 +1,110 @@
+/* Reset base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.tiny{
+font-size: small;
+}
+
+body {
+background-color: #1e1e1e;
+color: #ffffff;
+cursor: url("cursore\ normale.png"), auto;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+height: 100vh;
+}
+
+.header, .main-nav, .footer-nav {
+background-color: #2b2b2b;
+padding: 20px 20px;
+display: flex;
+align-items: center;
+
+}
+
+
+
+.user {
+margin-right: 20px;
+display: flex;
+align-items: center;
+border:1px solid red;
+border-bottom:1px solid transparent;
+margin-left: auto;
+}
+
+.user:hover{
+    background-color: #656565;
+    border-bottom: 1px solid transparent;
+}
+
+.main-nav li
+{
+
+border-bottom: 1px solid transparent;
+}
+
+.main-nav li:hover{
+    border-bottom: 1px solid white;
+    background-color: #656565;
+}
+
+ .user i {
+margin-right: 10px;
+}
+
+.system-status .status-item {
+margin-left: 20px;
+}
+
+.main-nav ul, .footer-nav ul {
+display: flex;
+list-style: none;
+}
+
+.main-nav ul li, .footer-nav ul li {
+margin: 0 10px;
+
+}
+
+.main-content {
+flex: 1;
+display: flex;
+padding: 20px;
+justify-content: space-between;
+}
+
+.section {
+background-color: #333333;
+padding: 20px;
+border-radius: 10px;
+width: 30%;
+}
+
+.section h2 {
+margin-bottom: 20px;
+}
+
+.status-item {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.status-item
+{
+content: "";
+display: block;
+width: 30px;
+height: 30px;
+background-color: #4CAF50; /* Color for status icons */
+border-radius: 50%;
+margin-bottom: 5px;
+}
